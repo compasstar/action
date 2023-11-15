@@ -286,6 +286,7 @@ update item set sold = 1 where id = 2;
 
 <br><br>
 ![img9](./img/img9.png)
+
 [Query] Sold Items <br>
 ```
 select i.category, i.name, b.purchase_date, b.amount_due_buyers_need_to_pay, u.name, floor(b.amount_due_buyers_need_to_pay * 0.1)
@@ -323,6 +324,7 @@ where b.buyer_id = 2;
 <br><br>
 ### Print Sold Items per Category
 ![img12](./img/img12.png)
+
 [Query]<br>
 ```
 select i.name, b.purchase_date, s.name, u.name, b.amount_due_buyers_need_to_pay, floor(b.amount_due_buyers_need_to_pay * 0.1)
